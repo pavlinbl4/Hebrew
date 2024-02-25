@@ -1,5 +1,5 @@
 # pip install webdriver-manager
-
+from datetime import datetime
 from selenium import webdriver
 # from webdriver_manager.chrome import ChromeDriverManager
 # from selenium.webdriver.chrome.service import Service
@@ -40,7 +40,7 @@ def open_page(page_link):
     # driver = webdriver.Chrome(service=service, options=setting_chrome_options())
     driver.get(page_link)
     # browser.get_screenshot_as_png('png_test')
-    driver.save_screenshot(f'screen_short_firefox.png')
+    driver.save_screenshot(f'screen_short_{datetime.today()}.png')
 
 
 # def sens_word_to_translate(word_to_translate):
