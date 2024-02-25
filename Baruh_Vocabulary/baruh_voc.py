@@ -40,7 +40,7 @@ def open_page(page_link):
     # driver = webdriver.Chrome(service=service, options=setting_chrome_options())
     driver.get(page_link)
     # browser.get_screenshot_as_png('png_test')
-    driver.save_screenshot(f'screen_short_{datetime.today()}.png')
+
 
 
 # def sens_word_to_translate(word_to_translate):
